@@ -1,0 +1,467 @@
+/*
+01.General
+02.Header
+03.Main
+04.Footer
+*/
+
+/*01.General*/
+
+*{
+	box-sizing: border-box;
+
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+body{
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color: #707070;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+	color: #2c2c37;
+}
+
+ul{
+	list-style: none;
+}
+
+.selected{
+	border-bottom: 2px solid #2c2c37;
+}
+/*01.General*/
+
+/*02.Header*/
+
+header{
+	width: 100%;
+	height: 900px;
+	max-height: 900px;
+	background: url('../assets/img/slide1.jpg');
+	background-size: cover;
+}
+
+.cover-text{
+	max-width: 30%;
+	height: auto;
+	color: #2c2c37;
+	background: transparent;
+	position: absolute;
+	top: 180px;
+	left: 200px;
+}
+
+.cover-text h1{
+	max-width: 30%;
+	font-size: 120px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.cover-text p{
+	font-size: 13px;
+	line-height: 20px;
+	margin-top: 20px;
+}
+
+.head-container{
+	width: 100%;
+	height: 130px;
+/*	max-width: 1200px;*/
+	padding: 0 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(255,255,255,0.8);
+	position: fixed;
+}
+
+/*.logo{
+	display: inline-block;
+}*/
+
+.dropbtn{
+	background: transparent;
+	border: none;
+	color: black;
+	display: none;
+}
+
+.nav-main{
+	/*position: relative;
+	left: -50%;*/
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	padding-left: 150px;
+	text-align: left;
+}
+
+.show{
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-main li a{
+	margin: 0 20px;
+	padding-bottom: 4px;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.nav-main li a:hover{
+	border-bottom: 2px solid #2c2c37;
+}
+
+.side-nav{
+	
+}
+
+.side-nav span{
+	margin: 0 15px;
+	color: #2c2c37;
+
+}
+
+.side-nav span:hover{
+	color: red;
+	cursor: pointer;
+}
+/*02.Header*/
+
+/*03.Main*/
+
+.article-first{
+	width: 95%;
+	display: flex;
+	margin: 20px auto;
+}
+
+.sale1 a:hover, .sale2 a:hover{
+	opacity: 0.8;
+}
+
+.sale2{
+	margin-left: 20px;
+}
+
+.title{
+	width: 95%;
+	max-width: 1200px;
+	display: block;
+	text-align: center;
+	margin: 30px auto;
+	padding-top: 50px;
+}
+
+.title h2{
+	font-size: 24px;
+	font-weight: bolder;
+	line-height: 30px;
+	color: #23232c;
+}
+
+.title p{
+	margin-bottom: 42px;
+	margin-top: 9px;
+	line-height: 24px;
+	font-size: 12px;
+}
+
+.title ul{
+	display: flex;
+	justify-content: center;
+}
+
+.title ul li a{
+	padding: 0 25px;
+	font-size: 14px;
+	color: #707070;
+	cursor: pointer;
+}
+
+.title ul li a:hover{
+	color: black;
+}
+
+.img-row, .article-row{
+	width: 85%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.img-row img{
+	padding: 0 10px;
+}
+
+.img-row a{
+	display: block;
+	line-height: 18px;
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0 10px;
+}
+
+.img-row p{
+	margin: 15px 10px;
+}
+
+.article-row img{
+	padding: 0 10px;
+}
+/*03.Main*/
+
+/*04.Footer*/
+
+.foot-subscribe{
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.foot-subscribe p{
+	font-size: 13px;
+	font-weight: 400;
+	color: rgb(112,112,112);
+}
+
+.foot-subscribe p span{
+	color: red;
+}
+
+.foot-subscribe h2{
+	font-size: 24px;
+	color: #363f4d;
+	font-weight: 600;
+	margin-bottom: 18px;
+	margin-top: 5px;
+}
+
+#subscribe{
+	width: 60%;
+	margin: 70px auto;
+	width: 600px;
+	height: 55px;
+	border: 2px solid rgb(235,235,235);
+	border-radius: 2px;
+}
+
+#subscribe-email{
+	width: 200px;
+	font-family: inherit;
+	color: rgb(157,157,157);
+	font-size: 12px;
+	border: none;
+	padding-left: 20px;
+	padding-top: 17px;
+	float: left;
+}
+
+#subscribe-button{
+	width: 200px;
+	background: transparent;
+	border: none;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 12px;
+	border-left: 2px solid rgb(235,235,235);
+	text-align: center;
+	padding-left: 20px;
+	margin: 17px 20px 0 20px;
+	float: right;
+	cursor: pointer;
+}
+
+#subscribe-button:hover{
+	color: red;
+}
+
+#instagram-row{
+	width: 85%;
+	margin: 0 auto;
+	display: flex;  
+}
+
+#instagram-block{
+	width: 100px;
+	height: 35px;
+	margin: 0 auto;
+	background: #23232c;
+	color: #fff;
+	font-size: 14px !important;
+	font-weight: bold;
+	border-radius: 3px;
+	position: relative;
+	top: -100px;
+}
+
+#instagram-block span{
+	padding: 10px 15px;
+}
+
+.footer-top{
+	margin-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	background: #222222;
+	border-bottom: 0.8px solid #2e2e2e;
+}
+
+.footer-top-container{
+	width: 85%;
+	margin: 0 auto;
+	padding-top: 70px;
+	color: #717171;
+	font-size: 13px;
+	line-height: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+h4{
+	color: #fff;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.foot-list-first{
+	width: 650px;
+	margin-right: 30px;
+}
+
+.foot-list-first a{
+	color: #fff;
+}
+
+.foot-list-first a:hover{
+	color: red;
+}
+
+#foot-follow-list{
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	padding-left: 0px !important;
+}
+
+#foot-follow-list a li span{
+	background: #2e2e2e;
+	color: #717171;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	padding: 15px;
+	margin-right: 10px;
+}
+
+#foot-follow-list a li span:hover{
+	background: red;
+	color: #fff;
+}
+
+.foot-list{
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	line-height: 30px;
+}
+
+.foot-list a{
+	color: #717171;
+}
+
+.foot-list a:hover{
+	color: red;
+	padding-left: 15px;
+}
+
+.foot-list ul{
+	padding-left: 0px !important;
+	margin-top: 0;
+}
+
+.foot-list span{
+	padding: 10px;
+	margin-right: 10px;
+	background: #2e2e2e;
+	border-radius: 3px;
+	line-height: 45px;
+}
+
+.foot-list span:hover{
+	color: #fff;
+	cursor: pointer;
+}
+
+.foot-bottom{
+	width: 100%;
+	background: #222222;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.foot-bottom-container{
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.foot-bottom-copy{
+	font-size: 13px;
+}
+
+.foot-bottom-copy span{
+	color: #fff;
+	cursor: pointer;
+}
+
+.foot-bottom-payment{
+	cursor: pointer;
+}
+
+/*04.Footer*/
+
+@media screen and (min-width: 960px) {
+
+	.head-container{
+		background: transparent;
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+	.dropbtn{
+		display: flex;
+		position: absolute;
+		top: 50px;
+		left: 50px;
+		cursor: pointer;
+	}
+
+	.nav-main{
+		display: none;
+	}
+
+	.show{
+		display: flex;
+		width: auto;
+	    background: #fff;
+	    position: absolute;
+	    left: 50px;
+	    padding: 30px 35px;
+	}
+}
